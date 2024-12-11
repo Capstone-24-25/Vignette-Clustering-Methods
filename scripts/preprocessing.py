@@ -1,9 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.cluster import SpectralClustering
+from sklearn.preprocessing import OneHotEncoder
 
 df = pd.read_csv('../data/user_behavior_dataset.csv')
 
