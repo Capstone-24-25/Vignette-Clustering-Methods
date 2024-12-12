@@ -1,27 +1,31 @@
-# spectral script
+# spectral_script.py
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.cluster import SpectralClustering
+from sklearn.preprocessing import StandardScaler
 
-df_transformed = pd.read_csv('../transformed_data/user_behavior_dataset.csv')
+def perform_spectral_clustering(filepath, n_clusters=5, n_neighbors=44):
+    # Load data
+    df_transformed = pd.read_csv(filepath)
 
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(df_transformed)
+    # Standardize the data
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(df_transformed)
 
-n_clusters = 5
+    # Initialize Spectral Clustering
+    spectral = SpectralClustering(
+        n_clusters=n_clusters,
+        affinity='nearest_neighbors',
+        n_neighbors=n_neighbors,
+        assign_labels='kmeans',
+        random_state=42
+    )
+    
+    # Fit the model and predict cluster labels
+    cluster_labels = spectral.fit_predict(X_scaled)
 
-spectral = SpectralClustering(
-    n_clusters=n_clusters,
-    affinity='nearest_neighbors',
-    n_neighbors=44, 
-    assign_labels='kmeans',
-    random_state=42
-)
-# Fit the model and predict cluster labels
-cluster_labels = spectral.fit_predict(X_scaled)
+    # Add the cluster labels to the DataFrame
+    df_transformed['Cluster'] = cluster_labels
 
-# Add the cluster labels to the DataFrame
-df_transformed['Cluster'] = cluster_labels
+    return df_transformed
