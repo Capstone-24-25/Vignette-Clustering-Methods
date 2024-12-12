@@ -35,3 +35,5 @@ For further information on clustering methods implemented on Python, here are so
 1. https://scikit-learn.org/1.5/modules/clustering.html
 2. https://www.geeksforgeeks.org/ml-spectral-clustering/
 3. https://medium.com/@khalidassalafy/agglomerative-hierarchical-clustering-a-study-and-implementation-in-python-fddfdb6a7a64
+4. https://medium.com/@amit25173/advanced-techniques-in-k-means-clustering-bd8cfa27ebc1
+5. https://medium.com/swlh/k-means-clustering-on-high-dimensional-data-d2151e1a4240
