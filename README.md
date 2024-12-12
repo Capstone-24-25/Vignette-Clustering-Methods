@@ -1,5 +1,5 @@
-# Vignette-Group-11
-Vignette on comparing three clustering methods (k-nearest-neighbors, spectral, agglomerative); created as a class project for PSTAT197A in Fall 2024.
+# Vignette-Clustering-Methods
+Vignette on comparing three clustering methods (k means, spectral, agglomerative); created as a class project for PSTAT197A in Fall 2024.
 
 ### Contributors
 - Kasturi Sharma
@@ -12,7 +12,7 @@ Vignette on comparing three clustering methods (k-nearest-neighbors, spectral, a
 ### Vignette Abstract
 
 For this project, we are showcasing how clustering methods can be applied to various datasets. For our specific vignette, we chose the user behavior dataset that lists a person's phone model, operating system, app usage, battery life, etc. 
-Our objective for this vignette is compare three different clustering methods -- k-nearest neighbors, spectral, and agglomerative -- to group users based on similarities on their usage patterns. We will go through how to implement each of three methods by using this data set. 
+Our objective for this vignette is compare three different clustering methods -- k means, spectral, and agglomerative -- to group users based on similarities on their usage patterns. We will go through how to implement each of three methods by using this data set. 
 
 ### Repository Contents 
 -   `data` contains
