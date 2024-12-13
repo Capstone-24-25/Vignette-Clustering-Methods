@@ -27,5 +27,5 @@ def perform_spectral_clustering(filepath, n_clusters=5, n_neighbors=44):
 
     # Add the cluster labels to the DataFrame
     df_transformed['Cluster'] = cluster_labels
-
+    
     return df_transformed
