@@ -30,6 +30,8 @@ Our objective for this vignette is compare three different clustering methods --
 
 -   `results` contains a report template `primary-vignette.ipynb` and `primary-vignette.html`
 
+-   `img` contains graphs from the various scripts
+
 ### Reference List
 For further information on clustering methods implemented on Python, here are some links that may help!
 1. https://scikit-learn.org/1.5/modules/clustering.html
